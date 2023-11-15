@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #6a0dad;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #6a0dad;
+  cursor: pointer;
+}
+
+#banner {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 700px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-img.active {
+  opacity: 1;
+}
+.active {
+  display: block;
+}
+
+#cotizacionDolar {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 7% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+}
+
+.modal-content form button[type="submit"] {
+  margin: 10px auto;
+  display: block;
+  width: 50%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 18px);
+}
+
+button[type="submit"] {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content form input[type="text"][name="usuario"],
+.modal-content form input[type="password"][name="contrasena"],
+.modal-content form input[type="password"][name="confirmarContrasena"] {
+  border: 1px solid #6a0dad; /* Cambia el borde a color violeta */
+  color: #6a0dad; /* Cambia el color del texto a violeta */
+  font-weight: bold; /* Establece el texto en negrita */
+  /* Otros estilos opcionales */
+  /* background-color: #f5f5f5; */ /* Color de fondo */
+  /* border-radius: 4px; */ /* Esquinas redondeadas */
+}
+
+.modal-content form label[for="usuario"],
+.modal-content form label[for="contrasena"],
+.modal-content form label[for="confirmarContrasena"] {
+  font-weight: bold; /* Establece el texto en negrita */
+}
